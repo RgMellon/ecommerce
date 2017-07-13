@@ -5,8 +5,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="icon/style.css">
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
     <title>Awesome Books</title>
   </head>
   <body>
@@ -37,28 +37,132 @@
 
       <div class="header-main">
         <div class="header-main-right">
-          <input type="text" class="campo-pesquisa" placeholder="Pesquisar...">
-          <span class="icon-cart"></span>
+          <!-- <input type="text" class="campo-pesquisa" placeholder="Buscar..."> -->
+
+          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
           <span class="icon-file-text2"></span>
+
         </div>
         <div class="header-main-left">
-          <img src="img/logo/logo2.png" alt="logo books awesome">
+          <img src="img/logo/icon2.png" alt="logo books awesome">
         </div>
       </div>
 
       <div class="wraper">
-      <nav class="header-menu">
-        <ul class="menu-principal">
-              <li class="mais-procurados"> <a href=""> Mais Procura<span>dos</span> </li>
-              <li class="terror"> <a href="" class="terror"> Ter<span>ror</span></li>
-              <li class="suspense"> <a href=""> Suspe<span>nse</span></li>
-              <li class="ficcao-cientifica"> <a href=""> Ficção Cientif<span>ica</span></li>
-              <li class="romance"> <a href=""> Roma<span>nce</span></li>
-              <li class="contos"> <a href=""> Con<span>tos</span></li>
-        </ul>
-      </nav>
-    </div>
+        <button class="menu-abrir">Abre Menu</button>
+        <input type="text" class="campo-pesquisa" placeholder="Buscar...">
+          <nav class="header-menu">
+            <button  class="menu-fechar">Fecha Menu</button>
+              <ul class="menu-principal">
+                    <li class="mais-procurados"> <a href=""> Mais Procura<span>dos</span> </li></a>
+                    <li class="terror"> <a href="" class="terror"> Ter<span>ror</span></li></a>
+                    <li class="suspense"> <a href=""> Suspe<span>nse</span></li></a>
+                    <li class="ficcao-cientifica"> <a href=""> Ficção Cientif<span>ica</span></li></a>
+                    <li class="romance"> <a href=""> Roma<span>nce</span></li> </a>
+                    <li class="contos"> <a href=""> Con<span>tos</span></li> </a>
+              </ul>
+            <div class="usuario">
+              <div class="wrapper-login">
+                Login
+              </div>
+
+              <div class="wrapper-cadastro">
+                Cadastre-se
+              </div>
+
+            </div>
+          </nav>
+      </div>
 
     </header>
+
+    <main>
+      <div class="container">
+        <section class="bookstore">
+          <div class="livro">
+            <img src="img/books/mulher-preto.jpg" alt="imagem-livro">
+            <div class="area">
+              <h2 class="titulo-h2">Mulher de preto</h2>
+
+              <button class="detalhe-produto">
+                <div class="wraper-detalhe">
+                  <i class="fa fa-info-circle fa-3x" aria-hidden="true"></i>
+                </div>
+              </button>
+
+              <button class="btn-lista">
+                <div class="wraper-detalhe">
+                  <i class="fa fa-heart fa-3x" aria-hidden="true"></i>
+                </div>
+              </button>
+
+              <button class="btn-carrinho">
+                <div class="wraper-detalhe">
+                  <i class="fa fa-cart-plus fa-3x" aria-hidden="true"></i>
+                </div>
+              </button>
+
+            </div>
+          </div>
+          <div class="livro">
+            <img src="img/books/primeiro-assassinato.jpg" alt="imagem-livro">
+            
+            <div class="area">
+              <h2 class="titulo-h2">MEU PRIMEIRO ASSASSINATO </h2>
+
+              <button class="detalhe-produto">
+                <div class="wraper-detalhe">
+                  <i class="fa fa-info-circle fa-3x" aria-hidden="true"></i>
+                </div>
+              </button>
+
+              <button class="btn-lista">
+                <div class="wraper-detalhe">
+                  <i class="fa fa-heart fa-3x" aria-hidden="true"></i>
+                </div>
+              </button>
+
+              <button class="btn-carrinho">
+                <div class="wraper-detalhe">
+                  <i class="fa fa-cart-plus fa-3x" aria-hidden="true"></i>
+                </div>
+              </button>
+
+            </div>
+            
+          </div>
+          <div class="livro">
+            <img src="img/books/american-gods.jpg" alt="imagem-livro">
+            <div class="area">
+              <h2 class="titulo-h2">American Gods</h2>
+
+              <button class="detalhe-produto">
+                <div class="wraper-detalhe">
+                  <i class="fa fa-info-circle fa-3x" aria-hidden="true"></i>
+                </div>
+              </button>
+
+              <button class="btn-lista">
+                <div class="wraper-detalhe">
+                  <i class="fa fa-heart fa-3x" aria-hidden="true"></i>
+                </div>
+              </button>
+
+              <button class="btn-carrinho">
+                <div class="wraper-detalhe">
+                  <i class="fa fa-cart-plus fa-3x" aria-hidden="true"></i>
+                </div>
+              </button>
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+
+    <script src="js/menu.js"></script>
+    <script src="js/busca.js"></script>
+
   </body>
 </html>

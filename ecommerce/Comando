@@ -1,0 +1,69 @@
+* git blame
+
+* git clone, com a url que ele dá
+
+** Mas como é possível visualizar as tags existentes num projeto? No Git, é possível listar todas as Tags existentes em um projeto através do comando tag:
+
+git tag ** 
+
+
+*************************
+Feito isso, como podemos fazer para voltar o repositório para alguma dessas versões? Por exemplo, queremos visualizar como o nosso projeto, junto com todos os seus arquivos html, estava na versão v0.1. Para isso, basta dizer ao git que queremos buscar a versão v0.1. Chamamos esse processo de checkout e podemos executá-lo com o comando a seguir:
+
+git checkout v0.1
+
+****************
+git diff v0.1 v0.2
+
+Diferença entre as duas versões
+
+Com isso, serão mostradas as linhas existentes numa versão que não aparecem na outra versão. Também serão mostradas as alterações efetuadas entre as versões selecionadas.
+
+********************
+
+git blame index.html
+
+Para sair do blame, basta apertar a tecla q
+
+*****************
+
+git init
+transforma a pasta em um repositorio do github
+
+*****************
+git ls-files
+mostra os arquivos que estão sendo controlados 4
+
+*************
+git status 
+mostra o status
+
+untracked não está rastreado
+esse é o padrão
+
+**git add, faz o arquivo ser rastreado
+
+** git commit 
+grava as alterações no repositorio
+
+*************************************
+working directory representa o estado atual dos arquivos no repositório. Podemos utilizar o comando git add para adicioná-los ao index, ou staging area, que representa uma visão preliminar das modificações que queremos definir para nosso projeto, comparando essas ao HEAD, o último passo completo do nosso projeto, que serve de referência para comparação do trabalho com o working directory.
+************
+
+git log 
+
+vê os comits feito até  então
+
+git whatchanged vê com mais detalhes o que foi modificado
+
+git whatchanged -p vê com mais detalhes ainda
+
+
+*********************************
+adicionar ao github
+git remote, para ver os repositorios remotos
+git remote add, para adicionar uma repositorio remoto 
+usando como parametro um nome, que foi dado de origin e o segundo parametro uma url, que é a url do github
+
+git push jogar coisas no repositorio remoto
+git push origin master, origin é o o nome dado, como dito logo acima
